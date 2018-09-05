@@ -3,12 +3,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forkify New</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/recipe.css">
+    <title>Recipe Search</title>
 </head>
 <body>
-    <h1>This is a spin off of the fork project</h1>
+    <div class="container-fluid">
+
+            <div class="row">
+                    <div class="col-md-12 search__div">
+                            <form class = "search">
+                                  <div class="form-group">
+                                    <label for="search">Search Recipe</label>
+                                    <input id = "search__input" type="text" class="form-control" class="search__field" aria-describedby="emailHelp" placeholder="Enter Info">
+             
+                                  </div>
+                                  <button type="submit" class="btn btn-primary search__btn">Search</button>
+                            </form>
+            
+                    </div>
+                </div>
+                    <div class="row">
+                        <div id = "results__recipe" class = "col-md-12">
+                            <!--see searchView.js-->
+                         </div>
+            </div>
+        </div>
+               
+
+
+ 
+
+
 
     <!--axios cdn-->
+    <!--bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <script  src = "./js/index.js" type = "module"></script>
 </body>
