@@ -1,4 +1,5 @@
-import * as searchView from './searchView.js';
+import * as searchView from './views/searchView.js';
+import * as recipeView from './views/recipeView.js';
 import {elements,renderLoader} from './base.js';
 import {Search} from './models/Search.js';
 
@@ -41,3 +42,4 @@ document.querySelector('.search').addEventListener('submit',(e)=>{
     controlSearch();
 })
 
+console.log(recipeView.test());

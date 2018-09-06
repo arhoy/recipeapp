@@ -1,7 +1,15 @@
-import {elements} from './base.js';
+import {elements} from '../base.js';
 
 export const getInput = ()=>{
     return elements.searchInput.value;
+}
+
+const loopIngredients = (ingredientsArray)=>{
+    let html = ``;
+    ingredientsArray.forEach(ingredient => {
+        html += `<p>${ingredient.text}</p>`
+    });
+    return html;
 }
 
 const renderRecipe = (recipe)=>{
@@ -15,13 +23,10 @@ const renderRecipe = (recipe)=>{
         </div>
         <button type="button" class="btn recipe__button" data-toggle="modal" data-target="#recipe">Show Ingredients</button>
     
-        <div class="modal fade" id="recipe" tabindex="-1" role="dialog"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modalc modal-content">
+    </div>
 
-            </div>
-            </div>
-        </div><!--.modal-->
+    <div class = "ingredients">
+        ${loopIngredients(r.ingredients)}
     </div>
     
     `;
