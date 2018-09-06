@@ -1,4 +1,8 @@
+body{
+    margin: 0 auto;
+    overflow-x: hidden;
 
+}
 #results__recipe{
     display: flex;
     flex-wrap: wrap;

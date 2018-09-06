@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/search.css">
     <title>Recipe Search</title>
 </head>
 <body>
     <div class="container-fluid">
 
             <div class="row">
+            
                     <div class="col-md-12 search__div">
-                            <form class = "search">
-                                  <div class="form-group">
-                                    <label for="search">Search Recipe</label>
-                                    <input id = "search__input" type="text" class="form-control" class="search__field" aria-describedby="emailHelp" placeholder="Enter Info">
-             
-                                  </div>
-                                  <button type="submit" class="btn btn-primary search__btn">Search</button>
-                            </form>
+                         
             
                     </div>
-                </div>
+
+                    <div class="search">
+                            <h2 class = "search__title">Recipe Search App</h2>
+                            <form class = "search__form">
+                                    <div class="form-group">
+                                      
+                                      <input id = "search__input" type="text" class="form-control" class="search__field" aria-describedby="emailHelp" placeholder="Discover your inner chef...">
+               
+                                    </div>
+                                    <button type="submit" class="btn search__btn">Search</button>
+                              </form>
+                    </div>
+                    
+
+            </div>
                     <div class="row">
                         <div id = "results__recipe" class = "col-md-12">
                             <!--see searchView.js-->
