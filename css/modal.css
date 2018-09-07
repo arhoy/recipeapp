@@ -1,0 +1,9 @@
+.modal-content{
+    background-image: linear-gradient(to right bottom,rgb(255, 175, 28), rgb(252, 229, 98));
+   
+}
+
+.modal-instructions, .modal-ingredients{
+    text-align: center;
+  
+}
