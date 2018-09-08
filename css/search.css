@@ -25,10 +25,21 @@
 }
 .search__btn{
     text-align: center;
-    display: inline;
+    display: inline-block;
+    width: 100%;
     background: linear-gradient(to right ,rgb(221, 221, 221,0.5),rgba(255, 255, 255, 0.80));
     color:black;
     font-weight: 600;
+    transition: all 0.4s ease;
+}
+.search__btn:hover{
+
+    background: linear-gradient(to right ,rgba(255, 255, 255, 0.80),rgb(221, 221, 221,0.5));
+    color:white;
+}
+.search__btn:focus,.search__btn:active{
+    outline:0 !important;
+    outline:none;
 }
 .search__form{
     display: flex;

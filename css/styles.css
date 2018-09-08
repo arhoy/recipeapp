@@ -1,0 +1,24 @@
+.search__div{
+    background-color:grey;
+
+    display:flex;
+    justify-content: center;
+}
+.results__div{
+    display:flex;
+    justify-content: center;
+}
+.results{
+    display:flex;
+    justify-content: center;
+}
+
+.result__recipe{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.result__paragraph{
+    text-align: center;
+}

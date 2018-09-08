@@ -3,23 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Custom Styles-->
     <link rel="stylesheet" href="css/recipe.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/modal.css">
-    <title>Recipe Search</title>
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Recipe Search Web App -- search your favourite recipes</title>
 </head>
 <body>
-    <div class="container-fluid">
 
+<div class="container-fluid">
             <div class="row">
-            
-                    <div class="col-md-12 search__div">
-                         
-            
-                    </div>
+                <!--Holds the background image so you can blur it-->
+                <div class="col-md-12 search__div"></div>
 
+                <!--search box-->
                     <div class="search">
                             <h2 class = "search__title">Recipe Search App</h2>
                             <form class = "search__form">
@@ -28,65 +30,34 @@
                                       <input id = "search__input" type="text" class="form-control" class="search__field" aria-describedby="emailHelp" placeholder="Discover your inner chef...">
                
                                     </div>
-                                    <button type="submit" class="btn search__btn">Search</button>
+                                    <button href = "#results__recipe" type="submit" class="btn search__btn">Search</button>
                               </form>
                     </div>
-                    
 
+                <!--recipe loading div-->
+                <div class="recipe__loading"></div>
             </div>
-                    <div class="row">
-                        <div id = "results__recipe" class = "col-md-12">
+
+            <div class="row">
+                <!--where recipes will get loaded into-->
+                <div id = "results__recipe" class = "col-md-12">
                             <!--see searchView.js-->
-
-
-                            <!-- <div class="recipe" style = "background-image: url(${recipe.image_url})">
-                                <div class="recipe__content">
-                                    <h4 class="recipe__header">${recipe.title}</h4>
-                                </div>
-                                <button type="button" class="btn recipe__button" data-toggle="modal" data-target="#recipe">Show Ingredients</button>
-
-
-                                                                        
-                                        <div class="modal fade" id="recipe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                ...
-                                                </div>
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                       
-                            
-                            </div> -->
-                            <!--recipe end-->
-
-                         </div>
+                </div>
             </div>
-        </div>
-               
-
-
- 
+ </div><!--end of main container-->
 
 
 
-    <!--axios cdn-->
-    <!--bootstrap 4 -->
+
+
+  
+    <!--bootstrap 4 CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     <!--axios CDN-->
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <!--import main js file-->
     <script  src = "./js/index.js" type = "module"></script>
 </body>
 </html>

@@ -10,6 +10,12 @@ body{
     margin: 3rem;
     justify-content: center;
 }
+.recipe__loading{
+    text-align: center;
+    width:100%;
+    margin-top: 1rem;
+   
+}
 
 .recipe{
     width: 25rem;
@@ -87,4 +93,10 @@ body{
     opacity: 1 !important;
     background-color: rgb(9, 207, 9);
     color:white;
+}
+.recipe__li{
+    list-style: none;
+}
+.recipe__icon{
+    margin-right: 0.8rem;
 }
